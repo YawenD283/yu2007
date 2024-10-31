@@ -16,6 +16,17 @@ The study **Rapid Word Learning Under Uncertainty via Cross-Situational Statisti
 
 This raises an important question: can learners successfully acquire word-referent pairs in highly ambiguous settings through alternative means, even when they cannot determine correct pairings within a single trial? To address the question, Yu and Smith propose an alternative mechanism—— cross-situational learning —— in this study. They demonstrated that learners could track word-referent pairings across multiple trials by calculating statistical associations over time rather than relying on immediate clarity within each learning instance.
 
+## Design Overview
+
+- One factor was manipulated in the study: within-trial ambiguity. The manipulation operates through three conditions in which the number of words and referents presented per trial varied (2×2, 3×3, and 4×4).
+- Two measures were taken: accuracy in learning word-referent pairs and response time. 
+- The study employed a within-participants design as each participant experienced all three conditions.
+- Measures were repeated across each condition for every participant. 
+- Applying a between-participants design instead of a within-participants design would increase variance due to individual learning differences.
+- The study reduced demand characteristics by using pseudowords and not providing explicit cues linking words to specific referents, thus participants had to rely solely on cross-trial statistical learning. 
+- A potential confound is the repetitive exposure to pseudowords and objects, which could lead participants to develop their own strategies which are not based on cross-trial statistical learning but rather on familiarity or memorization. 
+- The use of pseudowords and uncommon objects may limit generalizability to real-world language learning, where learners often have social and contextual cues available. Also, testing was limited to adult participants, so findings may not generalize well to children. 
+
 ## Methods
 
 ### Power Analysis
@@ -42,7 +53,6 @@ We will also examine response times across conditions to investigate whether hig
 
 Data cleaning will include the exclusion of trials where response times are excessively high or low to account for inattentiveness or random guessing. Also, participants performing below chance level overall will be excluded from the analysis, as this suggests they may not have engaged meaningfully with the task.
 
-
 ### Differences from Original Study
 
 -   Sample: The original study included 38 undergraduate participants from Indiana University. Our sample may differ slightly due to recruitment constraints; participants will probably being drawn from a broader demographic pool, which could introduce variability in learning abilities or prior exposure to similar experimental tasks. However, as cross-situational learning mechanisms are believed to be consistent across adult populations, the sample difference is not supposed to significantly impact the findings.
@@ -65,9 +75,9 @@ Any differences from what was described as the original plan, or “none”.
 
 ### Data preparation
 
-- Data from the experiment will be imported in a format compatible with R. The dataset will include participant IDs, condition labels (2×2, 3×3, 4×4), trial responses, accuracy scores, and response times for each trial. 
-- As noted above, trials with response times significantly above or below the mean and participants who perform below chance level across conditions will be excluded
-- After filtering the data, we will calculate mean accuracy for each participant across conditions (2×2, 3×3, 4×4) and create a new column for analysis.
+-   Data from the experiment will be imported in a format compatible with R. The dataset will include participant IDs, condition labels (2×2, 3×3, 4×4), trial responses, accuracy scores, and response times for each trial.
+-   As noted above, trials with response times significantly above or below the mean and participants who perform below chance level across conditions will be excluded
+-   After filtering the data, we will calculate mean accuracy for each participant across conditions (2×2, 3×3, 4×4) and create a new column for analysis.
 
 ```{r include=F}
 ### Data Preparation
@@ -83,10 +93,7 @@ Any differences from what was described as the original plan, or “none”.
 
 ### Confirmatory analysis
 
-The ANOVA test will include steps as follows:
-- accuracy calculation which computes the mean accuracy across trials within each condition (2×2, 3×3, and 4×4) of each participant. 
-- ANOVA assumptions check
-- Main ANOVA analysis
+The ANOVA test will include steps as follows: - accuracy calculation which computes the mean accuracy across trials within each condition (2×2, 3×3, and 4×4) of each participant. - ANOVA assumptions check - Main ANOVA analysis
 
 *Side-by-side graph with original graph is ideal here*
 
