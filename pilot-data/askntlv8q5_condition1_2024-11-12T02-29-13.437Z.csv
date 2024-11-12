@@ -1,0 +1,1326 @@
+"rt","stimulus","response","trial_type","trial_index","plugin_version","time_elapsed","success","timeout","failed_images","failed_audio","failed_video","correct_choice","correct_image","response_letter","correct","response_time"
+"2493","
+        <div class=""jspsych-html-keyboard-response-stimulus"">
+          <p>Welcome to the experiment.</p>
+          <p>Press any key to begin.</p>
+          <div class=""press-any-key"">Press any key to begin</div>
+        </div>
+      "," ","html-keyboard-response","0","2.0.0","2496","","","","","","","","","",""
+"4151","
+        <div class=""jspsych-html-keyboard-response-stimulus"">
+          <p id=""line1""></p>
+          <p id=""line2""></p>
+          <p id=""line3""></p>
+          <p id=""line4""></p>
+          <p id=""line5""></p>
+          <p id=""line6""></p>
+          <p id=""line7""></p>
+          <div class=""press-any-key"" style=""opacity: 0;"">Press any key to begin</div>
+        </div>
+     "," ","html-keyboard-response","1","2.0.0","6648","","","","","","","","","",""
+"","","","preload","2","2.0.0","6981","true","false","[]","[]","[]","","","","",""
+"","","","preload","3","2.0.0","7175","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/2.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/3.mp3"">
+          </audio>
+         ","null","html-keyboard-response","4","2.0.0","13181","","","","","","","","","",""
+"","","","preload","5","2.0.0","13449","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/5.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/3.mp3"">
+          </audio>
+         ","null","html-keyboard-response","6","2.0.0","19452","","","","","","","","","",""
+"","","","preload","7","2.0.0","19774","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/10.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/12.mp3"">
+          </audio>
+         ","null","html-keyboard-response","8","2.0.0","25777","","","","","","","","","",""
+"","","","preload","9","2.0.0","26145","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/14.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/14.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/12.mp3"">
+          </audio>
+         ","null","html-keyboard-response","10","2.0.0","32149","","","","","","","","","",""
+"","","","preload","11","2.0.0","32564","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/16.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/14.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/14.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/16.mp3"">
+          </audio>
+         ","null","html-keyboard-response","12","2.0.0","38569","","","","","","","","","",""
+"","","","preload","13","2.0.0","38930","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/6.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/8.mp3"">
+          </audio>
+         ","null","html-keyboard-response","14","2.0.0","44934","","","","","","","","","",""
+"","","","preload","15","2.0.0","44936","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/16.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/16.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/12.mp3"">
+          </audio>
+         ","null","html-keyboard-response","16","2.0.0","50939","","","","","","","","","",""
+"","","","preload","17","2.0.0","51707","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/18.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/14.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/18.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/14.mp3"">
+          </audio>
+         ","null","html-keyboard-response","18","2.0.0","57710","","","","","","","","","",""
+"","","","preload","19","2.0.0","58069","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/15.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/10.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/15.mp3"">
+          </audio>
+         ","null","html-keyboard-response","20","2.0.0","64072","","","","","","","","","",""
+"","","","preload","21","2.0.0","64462","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/13.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/11.mp3"">
+          </audio>
+         ","null","html-keyboard-response","22","2.0.0","70466","","","","","","","","","",""
+"","","","preload","23","2.0.0","70956","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/7.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/7.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/6.mp3"">
+          </audio>
+         ","null","html-keyboard-response","24","2.0.0","76958","","","","","","","","","",""
+"","","","preload","25","2.0.0","77453","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/5.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/4.mp3"">
+          </audio>
+         ","null","html-keyboard-response","26","2.0.0","83456","","","","","","","","","",""
+"","","","preload","27","2.0.0","83734","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/12.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/9.mp3"">
+          </audio>
+         ","null","html-keyboard-response","28","2.0.0","89737","","","","","","","","","",""
+"","","","preload","29","2.0.0","89738","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/3.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/6.mp3"">
+          </audio>
+         ","null","html-keyboard-response","30","2.0.0","95742","","","","","","","","","",""
+"","","","preload","31","2.0.0","95745","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/3.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/1.mp3"">
+          </audio>
+         ","null","html-keyboard-response","32","2.0.0","101748","","","","","","","","","",""
+"","","","preload","33","2.0.0","101750","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/16.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/14.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/14.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/16.mp3"">
+          </audio>
+         ","null","html-keyboard-response","34","2.0.0","107753","","","","","","","","","",""
+"","","","preload","35","2.0.0","107756","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/15.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/13.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/15.mp3"">
+          </audio>
+         ","null","html-keyboard-response","36","2.0.0","113760","","","","","","","","","",""
+"","","","preload","37","2.0.0","113762","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/18.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/16.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/18.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/16.mp3"">
+          </audio>
+         ","null","html-keyboard-response","38","2.0.0","119766","","","","","","","","","",""
+"","","","preload","39","2.0.0","119768","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/10.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/8.mp3"">
+          </audio>
+         ","null","html-keyboard-response","40","2.0.0","125772","","","","","","","","","",""
+"","","","preload","41","2.0.0","125774","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/10.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/11.mp3"">
+          </audio>
+         ","null","html-keyboard-response","42","2.0.0","131778","","","","","","","","","",""
+"","","","preload","43","2.0.0","131781","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/9.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/11.mp3"">
+          </audio>
+         ","null","html-keyboard-response","44","2.0.0","137784","","","","","","","","","",""
+"","","","preload","45","2.0.0","137786","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/2.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/4.mp3"">
+          </audio>
+         ","null","html-keyboard-response","46","2.0.0","143789","","","","","","","","","",""
+"","","","preload","47","2.0.0","143792","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/15.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/14.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/15.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/14.mp3"">
+          </audio>
+         ","null","html-keyboard-response","48","2.0.0","149795","","","","","","","","","",""
+"","","","preload","49","2.0.0","149795","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/11.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/13.mp3"">
+          </audio>
+         ","null","html-keyboard-response","50","2.0.0","155798","","","","","","","","","",""
+"","","","preload","51","2.0.0","155801","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/5.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/2.mp3"">
+          </audio>
+         ","null","html-keyboard-response","52","2.0.0","161804","","","","","","","","","",""
+"","","","preload","53","2.0.0","161805","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/9.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/3.mp3"">
+          </audio>
+         ","null","html-keyboard-response","54","2.0.0","167808","","","","","","","","","",""
+"","","","preload","55","2.0.0","167810","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/5.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/11.mp3"">
+          </audio>
+         ","null","html-keyboard-response","56","2.0.0","173813","","","","","","","","","",""
+"","","","preload","57","2.0.0","173814","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/18.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/15.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/15.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/18.mp3"">
+          </audio>
+         ","null","html-keyboard-response","58","2.0.0","179818","","","","","","","","","",""
+"","","","preload","59","2.0.0","179818","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/7.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/7.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/13.mp3"">
+          </audio>
+         ","null","html-keyboard-response","60","2.0.0","185821","","","","","","","","","",""
+"","","","preload","61","2.0.0","186255","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/15.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/17.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/17.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/15.mp3"">
+          </audio>
+         ","null","html-keyboard-response","62","2.0.0","192259","","","","","","","","","",""
+"","","","preload","63","2.0.0","192261","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/18.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/18.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/1.mp3"">
+          </audio>
+         ","null","html-keyboard-response","64","2.0.0","198265","","","","","","","","","",""
+"","","","preload","65","2.0.0","198267","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/8.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/6.mp3"">
+          </audio>
+         ","null","html-keyboard-response","66","2.0.0","204271","","","","","","","","","",""
+"","","","preload","67","2.0.0","204273","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/2.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/8.mp3"">
+          </audio>
+         ","null","html-keyboard-response","68","2.0.0","210276","","","","","","","","","",""
+"","","","preload","69","2.0.0","210278","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/7.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/7.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/5.mp3"">
+          </audio>
+         ","null","html-keyboard-response","70","2.0.0","216281","","","","","","","","","",""
+"","","","preload","71","2.0.0","216283","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/7.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/5.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/7.mp3"">
+          </audio>
+         ","null","html-keyboard-response","72","2.0.0","222287","","","","","","","","","",""
+"","","","preload","73","2.0.0","222289","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/9.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/8.mp3"">
+          </audio>
+         ","null","html-keyboard-response","74","2.0.0","228293","","","","","","","","","",""
+"","","","preload","75","2.0.0","228294","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/11.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/9.mp3"">
+          </audio>
+         ","null","html-keyboard-response","76","2.0.0","234297","","","","","","","","","",""
+"","","","preload","77","2.0.0","234299","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/18.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/2.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/18.mp3"">
+          </audio>
+         ","null","html-keyboard-response","78","2.0.0","240302","","","","","","","","","",""
+"","","","preload","79","2.0.0","240304","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/10.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/8.mp3"">
+          </audio>
+         ","null","html-keyboard-response","80","2.0.0","246307","","","","","","","","","",""
+"","","","preload","81","2.0.0","246308","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/17.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/17.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/1.mp3"">
+          </audio>
+         ","null","html-keyboard-response","82","2.0.0","252312","","","","","","","","","",""
+"","","","preload","83","2.0.0","252313","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/13.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/12.mp3"">
+          </audio>
+         ","null","html-keyboard-response","84","2.0.0","258317","","","","","","","","","",""
+"","","","preload","85","2.0.0","258319","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/6.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/1.mp3"">
+          </audio>
+         ","null","html-keyboard-response","86","2.0.0","264324","","","","","","","","","",""
+"","","","preload","87","2.0.0","264326","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/7.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/7.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/4.mp3"">
+          </audio>
+         ","null","html-keyboard-response","88","2.0.0","270330","","","","","","","","","",""
+"","","","preload","89","2.0.0","270333","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/4.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/1.mp3"">
+          </audio>
+         ","null","html-keyboard-response","90","2.0.0","276336","","","","","","","","","",""
+"","","","preload","91","2.0.0","276338","true","false","[]","[]","[]","","","","",""
+"null","
+          <div class=""image-container"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/16.bmp"" alt=""Image 1"">
+            <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/17.bmp"" alt=""Image 2"">
+          </div>
+          <div class=""timer"">Time Remaining: <span id=""timer"">6</span> seconds</div>
+          <audio id=""audio_a"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/16.mp3"">
+          </audio>
+          <audio id=""audio_b"">
+            <source src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/17.mp3"">
+          </audio>
+         ","null","html-keyboard-response","92","2.0.0","282341","","","","","","","","","",""
+"8407","
+    <div class=""jspsych-html-keyboard-response-stimulus"">
+    <p>Now that you've completed the learning phase, it's time for a test.</p>
+    <p>In each question, you will hear an audio clip and see four images on the screen.</p>
+    <p>Your task is to select the image that corresponds to the audio you hear. Use the mouse to select your answer.</p>
+    <p>You will not receive feedback during this test, but your performance will be recorded.</p>
+    <p>Press any key to begin the test.</p>
+    </div>
+  "," ","html-keyboard-response","93","2.0.0","290749","","","","","","","","","",""
+"7601","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/1.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" 
+                         alt=""Image 9"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" 
+                         alt=""Image 1"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" 
+                         alt=""Image 6"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" 
+                         alt=""Image 10"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","0","html-button-response","94","2.0.0","298353","","","","","","B","1","A","false","7601"
+"3865","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/2.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" 
+                         alt=""Image 3"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" 
+                         alt=""Image 2"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" 
+                         alt=""Image 11"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" 
+                         alt=""Image 6"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","1","html-button-response","95","2.0.0","302220","","","","","","B","2","B","true","3865"
+"4412","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/3.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" 
+                         alt=""Image 4"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" 
+                         alt=""Image 12"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" 
+                         alt=""Image 3"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" 
+                         alt=""Image 2"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","2","html-button-response","96","2.0.0","306634","","","","","","C","3","C","true","4412"
+"3332","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/4.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" 
+                         alt=""Image 5"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" 
+                         alt=""Image 8"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" 
+                         alt=""Image 9"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" 
+                         alt=""Image 4"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","3","html-button-response","97","2.0.0","309968","","","","","","D","4","D","true","3332"
+"3429","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/5.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" 
+                         alt=""Image 5"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/15.bmp"" 
+                         alt=""Image 15"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" 
+                         alt=""Image 13"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" 
+                         alt=""Image 11"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","1","html-button-response","98","2.0.0","313399","","","","","","A","5","B","false","3429"
+"3283","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/6.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" 
+                         alt=""Image 6"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" 
+                         alt=""Image 10"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/7.bmp"" 
+                         alt=""Image 7"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" 
+                         alt=""Image 1"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","0","html-button-response","99","2.0.0","316684","","","","","","A","6","A","true","3283"
+"3467","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/7.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/7.bmp"" 
+                         alt=""Image 7"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" 
+                         alt=""Image 6"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" 
+                         alt=""Image 4"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" 
+                         alt=""Image 11"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","0","html-button-response","100","2.0.0","320153","","","","","","A","7","A","true","3467"
+"3212","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/8.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" 
+                         alt=""Image 9"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" 
+                         alt=""Image 8"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" 
+                         alt=""Image 10"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" 
+                         alt=""Image 1"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","1","html-button-response","101","2.0.0","323368","","","","","","B","8","B","true","3212"
+"3117","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/9.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/17.bmp"" 
+                         alt=""Image 17"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" 
+                         alt=""Image 3"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/5.bmp"" 
+                         alt=""Image 5"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" 
+                         alt=""Image 9"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","3","html-button-response","102","2.0.0","326486","","","","","","D","9","D","true","3117"
+"3847","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/10.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" 
+                         alt=""Image 6"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" 
+                         alt=""Image 10"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" 
+                         alt=""Image 12"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" 
+                         alt=""Image 4"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","2","html-button-response","103","2.0.0","330336","","","","","","B","10","C","false","3847"
+"4997","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/11.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/11.bmp"" 
+                         alt=""Image 11"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" 
+                         alt=""Image 6"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/4.bmp"" 
+                         alt=""Image 4"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" 
+                         alt=""Image 2"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","0","html-button-response","104","2.0.0","335334","","","","","","A","11","A","true","4997"
+"2964","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/12.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" 
+                         alt=""Image 3"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" 
+                         alt=""Image 12"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" 
+                         alt=""Image 10"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/8.bmp"" 
+                         alt=""Image 8"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","1","html-button-response","105","2.0.0","338300","","","","","","B","12","B","true","2964"
+"3798","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/13.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/17.bmp"" 
+                         alt=""Image 17"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" 
+                         alt=""Image 13"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" 
+                         alt=""Image 10"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/1.bmp"" 
+                         alt=""Image 1"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","1","html-button-response","106","2.0.0","342100","","","","","","B","13","B","true","3798"
+"3148","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/14.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/16.bmp"" 
+                         alt=""Image 16"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/3.bmp"" 
+                         alt=""Image 3"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/14.bmp"" 
+                         alt=""Image 14"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/2.bmp"" 
+                         alt=""Image 2"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","2","html-button-response","107","2.0.0","345250","","","","","","C","14","C","true","3148"
+"2798","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/15.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/15.bmp"" 
+                         alt=""Image 15"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/14.bmp"" 
+                         alt=""Image 14"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" 
+                         alt=""Image 10"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" 
+                         alt=""Image 9"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","0","html-button-response","108","2.0.0","348050","","","","","","A","15","A","true","2798"
+"5899","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/16.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" 
+                         alt=""Image 13"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/7.bmp"" 
+                         alt=""Image 7"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/16.bmp"" 
+                         alt=""Image 16"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/17.bmp"" 
+                         alt=""Image 17"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","2","html-button-response","109","2.0.0","353951","","","","","","C","16","C","true","5899"
+"4231","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/17.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/6.bmp"" 
+                         alt=""Image 6"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" 
+                         alt=""Image 9"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/17.bmp"" 
+                         alt=""Image 17"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/10.bmp"" 
+                         alt=""Image 10"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","0","html-button-response","110","2.0.0","358185","","","","","","C","17","A","false","4231"
+"3680","
+      <div style=""text-align: center;"">
+        <p>Listen to the audio and select the matching image:</p>
+        <audio src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/audio/18.mp3"" autoplay></audio>
+        <div style=""display: flex; justify-content: center; gap: 20px; margin-top: 20px;"">
+          <div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/12.bmp"" 
+                         alt=""Image 12"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">A</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/18.bmp"" 
+                         alt=""Image 18"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">B</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/9.bmp"" 
+                         alt=""Image 9"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">C</div>
+                </div><div style=""display: flex; flex-direction: column; align-items: center;"">
+                  <button class=""jspsych-btn"" style=""padding: 0; border: none; background: none;"">
+                    <img src=""https://raw.githubusercontent.com/ucsd-psych201a/yu2007/refs/heads/main/stimuli/condition1/image/13.bmp"" 
+                         alt=""Image 13"" 
+                         style=""width: 150px; height: 150px; display: block;"">
+                  </button>
+                  <div style=""margin-top: 10px; font-weight: bold;"">D</div>
+                </div>
+        </div>
+      </div>
+    ","1","html-button-response","111","2.0.0","361868","","","","","","B","18","B","true","3680"

@@ -18,14 +18,14 @@ This raises an important question: can learners successfully acquire word-refere
 
 ## Design Overview
 
-- One factor was manipulated in the study: within-trial ambiguity. The manipulation operates through three conditions in which the number of words and referents presented per trial varied (2×2, 3×3, and 4×4).
-- Two measures were taken: accuracy in learning word-referent pairs and response time. 
-- The study employed a within-participants design as each participant experienced all three conditions.
-- Measures were repeated across each condition for every participant. 
-- Applying a between-participants design instead of a within-participants design would increase variance due to individual learning differences.
-- The study reduced demand characteristics by using pseudowords and not providing explicit cues linking words to specific referents, thus participants had to rely solely on cross-trial statistical learning. 
-- A potential confound is the repetitive exposure to pseudowords and objects, which could lead participants to develop their own strategies which are not based on cross-trial statistical learning but rather on familiarity or memorization. 
-- The use of pseudowords and uncommon objects may limit generalizability to real-world language learning, where learners often have social and contextual cues available. Also, testing was limited to adult participants, so findings may not generalize well to children. 
+-   One factor was manipulated in the study: within-trial ambiguity. The manipulation operates through three conditions in which the number of words and referents presented per trial varied (2×2, 3×3, and 4×4).
+-   Two measures were taken: accuracy in learning word-referent pairs and response time.
+-   The study employed a within-participants design as each participant experienced all three conditions.
+-   Measures were repeated across each condition for every participant.
+-   Applying a between-participants design instead of a within-participants design would increase variance due to individual learning differences.
+-   The study reduced demand characteristics by using pseudowords and not providing explicit cues linking words to specific referents, thus participants had to rely solely on cross-trial statistical learning.
+-   A potential confound is the repetitive exposure to pseudowords and objects, which could lead participants to develop their own strategies which are not based on cross-trial statistical learning but rather on familiarity or memorization.
+-   The use of pseudowords and uncommon objects may limit generalizability to real-world language learning, where learners often have social and contextual cues available. Also, testing was limited to adult participants, so findings may not generalize well to children.
 
 ## Methods
 
@@ -83,19 +83,103 @@ Any differences from what was described as the original plan, or “none”.
 ### Data Preparation
 
 #### Load Relevant Libraries and Functions
+library(jsonlite)
+library(dplyr)
+library(ggplot2)
+library(pwr)
+library(effectsize)
 
 #### Import data
+setwd("/Users/yawendong/Documents/GitHub/psych final project/pilot-data")
+files <- list.files(pattern = "\\.csv$")
+all_data <- lapply(files, read.csv) %>% bind_rows()
 
 #### Data exclusion / filtering
+selected_data <- all_data %>% select(correct_choice, correct_image, response_letter, correct, response_time)
+cleaned_data <- na.omit(selected_data)
+cleaned_data$correct <- as.logical(cleaned_data$correct)
 
 #### Prepare data for analysis - create columns etc.
 ```
 
 ### Confirmatory analysis
 
-The ANOVA test will include steps as follows: - accuracy calculation which computes the mean accuracy across trials within each condition (2×2, 3×3, and 4×4) of each participant. - ANOVA assumptions check - Main ANOVA analysis
+As we did not finish coding for the 3 \* 3 and 4 \* 4 condition, we only asked 10 participants to complete 2 \* 2 condition in the pilot test. The following confirmatory analysis is based solely on their performance in the 2 \* 2 condition. Due to lack of within-condition data, it appears to be impossible to conduct ANOVA analysis at the time.
 
-*Side-by-side graph with original graph is ideal here*
+#### Accuracy
+
+```{r}
+accuracy <- mean(cleaned_data$correct, na.rm = TRUE)
+print(paste("Overall Accuracy: ", round(accuracy * 100, 2), "%"))
+```
+
+In the pilot test, the overall accuracy in 2\*2 condition among 10 participants is 0.828, which means, on average, each participant matched about 15 out of 18 pseudowords with their corresponding images (picture of uncommon objects, as noted above) correctly.
+
+```{r}
+image_accuracy <- cleaned_data %>%
+  group_by(correct_image) %>%
+  summarize(accuracy = mean(correct, na.rm = TRUE))
+
+ggplot(image_accuracy, aes(x = correct_image, y = accuracy)) +
+  geom_line(color = "forestgreen", size = 1) + 
+  geom_point(color = "skyblue3", size = 2) +
+  scale_x_continuous(breaks = seq(1, 18, 1))+
+  labs(x = "Image",
+       y = "Accuracy")
+```
+
+The line plot presents the accuracy for each image, ranging from 0.6 to 1.0. Differences in accuracy could be due to certain images being more ambiguous, unfamiliar, or harder to associate with the correct pseudowords.
+
+#### Response Time
+
+```{r}
+response_time <- cleaned_data %>%
+  group_by(correct) %>%
+  summarize(
+    mean_response_time = mean(response_time, na.rm = TRUE),
+    median_response_time = median(response_time, na.rm = TRUE),
+    sd_response_time = sd(response_time, na.rm = TRUE)
+  )
+
+print(response_time)
+```
+
+As shown in the table, participants in the pilot test took significantly longer to respond when their answers were incorrect (mean response time = 4356.23 ms, SD = 1819.59 ms) compared to when their answers were correct (mean response time = 3453.13 ms, SD = 1682.96 ms).
+
+#### t-test
+
+```{r}
+t_test <- t.test(
+  response_time ~ correct,
+  data = cleaned_data
+)
+
+print(t_test)
+```
+
+Since p \< 0.05 , we reject the null hypothesis and conclude that there is a statistically significant difference in response times between the two groups. Response times are significantly faster for correct responses (correct = TRUE) compared to incorrect responses (correct = FALSE).
+
+#### Power Analysis
+
+```{r}
+cohens_d <- cohens_d(response_time ~ correct, data = cleaned_data)
+cohens_d
+
+pwr_result <- pwr.t.test(
+  d = 0.53,
+  sig.level = 0.05,
+  power = 0.80,
+  type = "two.sample"
+)
+print(pwr_result)
+```
+
+The pilot test suggests that there is a medium effect siz of 0.53 in the 2 \* 2 condition. Using G \* Power, we conducted a power analysis for a two-sample t-test with a significance level of alpha = 0.05 and desired power of 0.80. The results indicated that we would need at least 57 participants per group to achieve sufficient statistical power for detecting this effect size. However, the results can be biased for only 2 \* 2 condition is taken into consideration.
+
+#### Additional Links
+
+-   Stimuli: https://github.com/ucsd-psych201a/yu2007/tree/main/stimuli
+-   Code (only includes 2\*2 condition) : https://github.com/ucsd-psych201a/yu2007/blob/main/coding_test.html
 
 ### Exploratory analyses
 
