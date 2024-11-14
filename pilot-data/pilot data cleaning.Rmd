@@ -1,0 +1,85 @@
+---
+title: "Untitled"
+author: "Yawen Dong"
+date: "2024-11-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(jsonlite)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+setwd("/Users/yawendong/Documents/GitHub/psych final project/pilot-data")
+files <- list.files(pattern = "\\.csv$")
+```
+
+```{r}
+all_data <- lapply(files, read.csv) %>% bind_rows()
+str(all_data)
+```
+
+```{r}
+selected_data <- all_data %>% select(correct_choice, correct_image, response_letter, correct, response_time)
+cleaned_data <- na.omit(selected_data)
+write.csv(cleaned_data, "cleaned_pilot_data.csv", row.names = FALSE)
+```
+
+```{r}
+cleaned_data$correct <- as.logical(cleaned_data$correct)
+accuracy <- mean(cleaned_data$correct, na.rm = TRUE)
+print(paste("Overall Accuracy: ", round(accuracy * 100, 2), "%"))
+```
+
+```{r}
+image_accuracy <- cleaned_data %>%
+  group_by(correct_image) %>%
+  summarize(accuracy = mean(correct, na.rm = TRUE))
+```
+
+```{r}
+ggplot(image_accuracy, aes(x = correct_image, y = accuracy)) +
+  geom_line(color = "forestgreen", size = 1) + 
+  geom_point(color = "skyblue3", size = 2) +
+  scale_x_continuous(breaks = seq(1, 18, 1))+
+  labs(x = "Image",
+       y = "Accuracy")
+```
+
+```{r}
+response_time <- cleaned_data %>%
+  group_by(correct) %>%
+  summarize(
+    mean_response_time = mean(response_time, na.rm = TRUE),
+    median_response_time = median(response_time, na.rm = TRUE),
+    sd_response_time = sd(response_time, na.rm = TRUE)
+  )
+
+print(response_time)
+```
+```{r}
+ggplot(cleaned_data, aes(x = correct, y = response_time)) +
+  geom_boxplot() +
+  labs(title = "Response Times by Correctness", x = "Correctness", y = "Response Time (ms)")
+```
+
+```{r}
+t_test <- t.test(
+  response_time ~ correct,
+  data = cleaned_data
+)
+
+print(t_test)
+```
+
+
+
+
+
+
+
+
