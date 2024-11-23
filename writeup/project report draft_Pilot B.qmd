@@ -100,87 +100,167 @@ library(dplyr)
 library(ggplot2)
 library(pwr)
 library(effectsize)
+library(car)
+library(tidyr)
 ```
 
 #### Import data
 
 ```{r}
-setwd("/Users/yawendong/Documents/GitHub/psych final project/pilot-data")
-files <- list.files(pattern = "\\.csv$")
-all_data <- lapply(files, read.csv) %>% bind_rows()
+setwd("/Users/yawendong/Documents/GitHub/psych final project/pilotB_data/Condition1")
+files1 <- list.files(pattern = "\\.csv$")
+data1 <- lapply(files1, read.csv) %>% bind_rows()
+
+setwd("/Users/yawendong/Documents/GitHub/psych final project/pilotB_data/Condition2")
+files2 <- list.files(pattern = "\\.csv$")
+data2 <- lapply(files2, read.csv) %>% bind_rows()
+
+setwd("/Users/yawendong/Documents/GitHub/psych final project/pilotB_data/Condition3")
+files3 <- list.files(pattern = "\\.csv$")
+data3 <- lapply(files3, read.csv) %>% bind_rows()
 ```
 
 #### Data exclusion / filtering
+```{r}
+selected_data1 <- data1 %>% select(correct_choice, correct_image, response_letter, correct, response_time)
+cleaned_data1 <- na.omit(selected_data1)
+cleaned_data1$correct <- as.logical(cleaned_data1$correct)
+
+selected_data2 <- data2 %>% select(correct_choice, correct_image, response_letter, correct, response_time)
+cleaned_data2 <- na.omit(selected_data2)
+cleaned_data2$correct <- as.logical(cleaned_data2$correct)
+
+selected_data3 <- data3 %>% select(correct_choice, correct_image, response_letter, correct, response_time)
+cleaned_data3 <- na.omit(selected_data3)
+cleaned_data3$correct <- as.logical(cleaned_data3$correct)
+```
 
 #### Prepare data for analysis - create columns etc.
-
 ```{r}
-selected_data <- all_data %>% select(correct_choice, correct_image, response_letter, correct, response_time)
-cleaned_data <- na.omit(selected_data)
-cleaned_data$correct <- as.logical(cleaned_data$correct)
+cleaned_data1$Condition <- 'Condition1'
+cleaned_data2$Condition <- 'Condition2'
+cleaned_data3$Condition <- 'Condition3'
+
+combined_data <- bind_rows(cleaned_data1, cleaned_data2, cleaned_data3)
 ```
 
 ### Confirmatory analysis
 
-As we did not finish coding for the 3 \* 3 and 4 \* 4 condition, we only asked 10 participants to complete 2 \* 2 condition in the pilot test. The following confirmatory analysis is based solely on their performance in the 2 \* 2 condition. Due to lack of within-condition data, it appears to be impossible to conduct ANOVA analysis at the time.
+We employed 5 participants to complete 2 * 2 (Condition 1), 3 * 3 (Condition 2), and 4 * 4 (Condition 3) conditions in Pilot Test B. The participants spent 22 min on average to finish all three conditions, which is close to what we expected. 
 
-#### Accuracy
+## Accuracy
 
+### Overall Accuracy
 ```{r}
-accuracy <- mean(cleaned_data$correct, na.rm = TRUE)
-print(paste("Overall Accuracy: ", round(accuracy * 100, 2), "%"))
+accuracy <- combined_data %>%
+  group_by(Condition) %>%
+  summarise(Accuracy = mean(correct), .groups = 'drop')
+
+print(accuracy)
 ```
+Accuracy was highest in Condition1 at 73.3%, slightly lower in Condition2 at 72.2%, and significantly lower in Condition3 at 55.6%. The data indicates that increased ambiguity reduces accuracy.
 
-In the pilot test, the overall accuracy in 2\*2 condition among 10 participants is 0.828, which means, on average, each participant matched about 15 out of 18 pseudowords with their corresponding images (picture of uncommon objects, as noted above) correctly.
-
+### Accuracy over images
 ```{r}
-image_accuracy <- cleaned_data %>%
-  group_by(correct_image) %>%
-  summarize(accuracy = mean(correct, na.rm = TRUE))
+accuracy_by_image <- combined_data %>%
+  group_by(Condition, correct_image) %>%
+  summarise(Accuracy = mean(correct), .groups = 'drop')
 
-ggplot(image_accuracy, aes(x = correct_image, y = accuracy)) +
-  geom_line(color = "forestgreen", size = 1) + 
-  geom_point(color = "skyblue3", size = 2) +
-  scale_x_continuous(breaks = seq(1, 18, 1))+
-  labs(x = "Image",
-       y = "Accuracy")
+ggplot(accuracy_by_image, aes(x = correct_image, y = Accuracy, group = Condition, color = Condition)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  labs(
+    title = "Accuracy by Image for Each Condition",
+    x = "Image",
+    y = "Accuracy"
+  ) +
+  scale_x_continuous(breaks = unique(accuracy_by_image$correct_image)) +
+  facet_wrap(~Condition, scales = "free_x", ncol = 1)+
+  theme_minimal()
 ```
+The plot shows that the accuracy is relatively stable across images in each condition. The data in Condition 3 is the least stable, with accuracy showing large fluctuations and frequent dips below 0.5, indicating that the increased ambiguity leads to inconsistent performance across images. 
 
-The line plot presents the accuracy for each image, ranging from 0.6 to 1.0. Differences in accuracy could be due to certain images being more ambiguous, unfamiliar, or harder to associate with the correct pseudowords.
+## Reaction Times
 
-#### Response Time
-
+### Overall reaction times
 ```{r}
-response_time <- cleaned_data %>%
-  group_by(correct) %>%
-  summarize(
-    mean_response_time = mean(response_time, na.rm = TRUE),
-    median_response_time = median(response_time, na.rm = TRUE),
-    sd_response_time = sd(response_time, na.rm = TRUE)
+reaction_time <- combined_data %>%
+  group_by(Condition) %>%
+  summarise(
+    Mean_ReactionTime = mean(response_time),
+    SD_ReactionTime = sd(response_time),
+    .groups = 'drop'
   )
 
-print(response_time)
+print(reaction_time)
 ```
+Average reaction times are highest in Condition1 (4014.09 ms), and are shortest in Condition2. Also, reaction times in Condition 1 show significantly higher variability than the other two conditions.
 
-As shown in the table, participants in the pilot test took significantly longer to respond when their answers were incorrect (mean response time = 4356.23 ms, SD = 1819.59 ms) compared to when their answers were correct (mean response time = 3453.13 ms, SD = 1682.96 ms).
-
-#### t-test
-
+### Reaction times over images
 ```{r}
-t_test <- t.test(
-  response_time ~ correct,
-  data = cleaned_data
-)
+reaction_time_by_image <- combined_data %>%
+  group_by(Condition, correct_image) %>%
+  summarise(
+    Mean_ReactionTime = mean(response_time, na.rm = TRUE),
+    .groups = 'drop'
+  )
 
-print(t_test)
+ggplot(reaction_time_by_image, aes(x = correct_image, 
+                                   y = Mean_ReactionTime, 
+                                   group = Condition, 
+                                   color = Condition)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  labs(
+    title = "Reaction Times by Image for Each Condition",
+    x = "Image",
+    y = "Mean Reaction Time (ms)"
+  ) +
+  scale_x_continuous(breaks = unique(reaction_time_by_image$correct_image)) +
+  facet_wrap(~Condition, scales = "free_x", ncol = 1) +
+  theme_minimal() 
 ```
+Reaction times in condition 1 are generally stable across images, except for a sharp spike at Image 8. Due to our small sample size, this might suggest participants encountered a specific difficulty on that image. Reaction times are relatively consistent across all images in Condition 2 and 3. 
 
-Since p \< 0.05 , we reject the null hypothesis and conclude that there is a statistically significant difference in response times between the two groups. Response times are significantly faster for correct responses (correct = TRUE) compared to incorrect responses (correct = FALSE).
+## Chance Performance
+```{r}
+# The expected performance by chance for 2*2, 3*3, and 4*4 Condition is 1/4, 1/9, and 1/16
+combined_data <- combined_data %>%
+  mutate(chance_level = case_when(
+    Condition == "Condition1" ~ 0.25,
+    Condition == "Condition2" ~ 0.1111,
+    Condition == "Condition3" ~ 0.0625
+  ))
+
+t_test_results <- combined_data %>%
+  group_by(Condition) %>%
+  summarise(
+    t_test_p_value = t.test(correct, mu = unique(chance_level))$p.value,
+    .groups = 'drop'
+  )
+
+print(t_test_results)
+```
+The t-tests validate that participants are employing cross-situational learning to perform better than random guessing in all conditions, aligning with findings in the original study.
+
+## Effect of Condition (ANOVA)
+```{r}
+anova <- aov(correct ~ Condition, data = combined_data)
+summary(anova)
+```
+The p-value indicates that condition has a measurable effect on accuracy, meaning the level of ambiguity in word-referent pairings impacts participants’ performance.
+
+### Post-Hoc Analysis
+```{r}
+tukey <- TukeyHSD(anova)
+print(tukey)
+```
+The analysis shows that there is no statistically significant difference between Condition1 and Condition2, while Condition3 shows lower accuracy than the other two conditions. 
 
 #### Additional Links
 
 -   Stimuli: https://github.com/ucsd-psych201a/yu2007/tree/main/stimuli
--   Code (the pilot test only includes 2\*2 condition) : https://ucsd-psych201a.github.io/yu2007/coding.html
+-   Code: https://ucsd-psych201a.github.io/yu2007/final_coding_11.22.html
 
 ### Exploratory analyses
 
