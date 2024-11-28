@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alison Park, Junyi Hui, Pengjia Cui, and Yawen Dong">
-<meta name="dcterms.date" content="2024-11-22">
+<meta name="dcterms.date" content="2024-11-26">
 
 <title>Replication of Study Rapid Word Learning Under Uncertainty via Cross-Situational Statistics by Yu &amp; Smith (2007, Psychological Science)</title>
 <style>
@@ -3149,7 +3149,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 22, 2024</p>
+      <p class="date">November 26, 2024</p>
     </div>
   </div>
   
@@ -3286,9 +3286,8 @@ Attaching package: &#39;dplyr&#39;</code></pre>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package &#39;ggplot2&#39; was built under R version 4.2.3</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pwr)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading required package: carData</code></pre>
 </div>
@@ -3469,12 +3468,12 @@ Attaching package: &#39;car&#39;</code></pre>
 <section id="chance-performance" class="level2">
 <h2 class="anchored" data-anchor-id="chance-performance">Chance Performance</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The expected performance by chance for 2*2, 3*3, and 4*4 Condition is 1/4, 1/9, and 1/16</span></span>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The expected performance by chance for 2*2, 3*3, and 4*4 Condition are all 1/4</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>combined_data <span class="ot">&lt;-</span> combined_data <span class="sc">%&gt;%</span></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">chance_level =</span> <span class="fu">case_when</span>(</span>
 <span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    Condition <span class="sc">==</span> <span class="st">&quot;Condition1&quot;</span> <span class="sc">~</span> <span class="fl">0.25</span>,</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    Condition <span class="sc">==</span> <span class="st">&quot;Condition2&quot;</span> <span class="sc">~</span> <span class="fl">0.1111</span>,</span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>    Condition <span class="sc">==</span> <span class="st">&quot;Condition3&quot;</span> <span class="sc">~</span> <span class="fl">0.0625</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    Condition <span class="sc">==</span> <span class="st">&quot;Condition2&quot;</span> <span class="sc">~</span> <span class="fl">0.25</span>,</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>    Condition <span class="sc">==</span> <span class="st">&quot;Condition3&quot;</span> <span class="sc">~</span> <span class="fl">0.25</span></span>
 <span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  ))</span>
 <span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>t_test_results <span class="ot">&lt;-</span> combined_data <span class="sc">%&gt;%</span></span>
@@ -3490,8 +3489,8 @@ Attaching package: &#39;car&#39;</code></pre>
   Condition  t_test_p_value
   &lt;chr&gt;               &lt;dbl&gt;
 1 Condition1       7.31e-17
-2 Condition2       4.99e-22
-3 Condition3       6.72e-15</code></pre>
+2 Condition2       4.14e-16
+3 Condition3       9.92e- 8</code></pre>
 </div>
 </div>
 <p>The t-tests validate that participants are employing cross-situational learning to perform better than random guessing in all conditions, aligning with findings in the original study.</p>

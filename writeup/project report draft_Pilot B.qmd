@@ -98,7 +98,6 @@ Any differences from what was described as the original plan, or “none”.
 library(jsonlite)
 library(dplyr)
 library(ggplot2)
-library(pwr)
 library(effectsize)
 library(car)
 library(tidyr)
@@ -224,12 +223,12 @@ Reaction times in condition 1 are generally stable across images, except for a s
 
 ## Chance Performance
 ```{r}
-# The expected performance by chance for 2*2, 3*3, and 4*4 Condition is 1/4, 1/9, and 1/16
+# The expected performance by chance for 2*2, 3*3, and 4*4 Condition are all 1/4
 combined_data <- combined_data %>%
   mutate(chance_level = case_when(
     Condition == "Condition1" ~ 0.25,
-    Condition == "Condition2" ~ 0.1111,
-    Condition == "Condition3" ~ 0.0625
+    Condition == "Condition2" ~ 0.25,
+    Condition == "Condition3" ~ 0.25
   ))
 
 t_test_results <- combined_data %>%
