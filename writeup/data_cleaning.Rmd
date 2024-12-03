@@ -21,9 +21,15 @@ library(tidyr)
 
 ## Condition 1
 ```{r}
-setwd("/Users/yawendong/Documents/GitHub/psych final project/pilotB_data/Condition1")
+setwd("/Users/yawendong/Documents/GitHub/psych final project/final_data/Condition1")
 files1 <- list.files(pattern = "\\.csv$")
-data1 <- lapply(files1, read.csv) %>% bind_rows()
+
+data1 <- lapply(files1, function(file) {
+  df <- read.csv(file)
+  df$correct <- as.character(df$correct)
+  df <- df %>% filter(!is.na(correct))
+  return(df)
+}) %>% bind_rows()
 ```
 
 ```{r}
@@ -35,9 +41,15 @@ cleaned_data1$Condition <- 'Condition1'
 
 ## Condition 2
 ```{r}
-setwd("/Users/yawendong/Documents/GitHub/psych final project/pilotB_data/Condition2")
+setwd("/Users/yawendong/Documents/GitHub/psych final project/final_data/Condition2")
 files2 <- list.files(pattern = "\\.csv$")
-data2 <- lapply(files2, read.csv) %>% bind_rows()
+
+data2 <- lapply(files2, function(file) {
+  df <- read.csv(file)
+  df$correct <- as.character(df$correct)
+  df <- df %>% filter(!is.na(correct))
+  return(df)
+}) %>% bind_rows()
 ```
 
 ```{r}
@@ -49,7 +61,7 @@ cleaned_data2$Condition <- 'Condition2'
 
 ## Condition 3
 ```{r}
-setwd("/Users/yawendong/Documents/GitHub/psych final project/pilotB_data/Condition3")
+setwd("/Users/yawendong/Documents/GitHub/psych final project/final_data/Condition3")
 files3 <- list.files(pattern = "\\.csv$")
 data3 <- lapply(files3, read.csv) %>% bind_rows()
 ```
@@ -138,12 +150,12 @@ ggplot(reaction_time_by_image, aes(x = correct_image,
 
 ## Chance Performance
 ```{r}
-# The expected performance by chance for 2*2, 3*3, and 4*4 Condition is 1/4, 1/9, and 1/16
+# The expected performance by chance for 2*2, 3*3, and 4*4 Condition are 1/4
 combined_data <- combined_data %>%
   mutate(chance_level = case_when(
     Condition == "Condition1" ~ 0.25,
-    Condition == "Condition2" ~ 0.1111,
-    Condition == "Condition3" ~ 0.0625
+    Condition == "Condition2" ~ 0.25,
+    Condition == "Condition3" ~ 0.25
   ))
 
 t_test_results <- combined_data %>%
@@ -167,6 +179,8 @@ summary(anova)
 tukey <- TukeyHSD(anova)
 print(tukey)
 ```
+
+
 
 
 
