@@ -270,18 +270,18 @@ cleaned_data3$correct <- as.logical(cleaned_data3$correct)
 outliers <- function(data) {
   stats <- data %>%
     summarise(
-      mean_res_time = mean(response_time, na.rm = TRUE),
-      sd_res_time = sd(response_time, na.rm = TRUE)
+      median = median(response_time, na.rm = TRUE),
+      sd = sd(response_time, na.rm = TRUE)
     )
-  lower_bound <- stats$mean_res_time - (3 * stats$sd_res_time)
-  upper_bound <- stats$mean_res_time + (3 * stats$sd_res_time)
-  participant_summary <- data %>%
+  lower_bound <- stats$median - (3 * stats$sd)
+  upper_bound <- stats$median + (3 * stats$sd)
+  participant <- data %>%
     group_by(ParticipantID) %>%
     summarise(
-      avg_res_time = mean(response_time, na.rm = TRUE)
+      avg = mean(response_time, na.rm = TRUE)
     )
-  outliers <- participant_summary %>%
-    filter(avg_res_time < lower_bound | avg_res_time > upper_bound) %>%
+  outliers <- participant %>%
+    filter(avg < lower_bound | avg > upper_bound) %>%
     pull(ParticipantID)
   return(outliers)
 }
@@ -303,7 +303,6 @@ filtered_data3 <- cleaned_data3 %>%
   filter(!ParticipantID %in% all_outliers)
 ```
 
-
 #### Prepare data for analysis - create columns etc.
 
 ```{r}
@@ -318,24 +317,19 @@ combined_data <- bind_rows(filtered_data1, filtered_data2, filtered_data3)
 
 ## Confirmatory analysis
 
-As noted before, we collected data from 42 participants across three experimental conditions. One participant was excluded for failing to complete all tests, and another was removed due to excessively high response times (greater than 3 standard deviations above the mean) in Condition 1. Therefore, the following confirmatory analysis is based on data from the remaining 40 participants.
-
-```{r}
-# Aggregate trial-level data into participant-level data
-participant_data <- combined_data %>%
-  group_by(Condition, ParticipantID) %>%
-  summarise(
-    perc = mean(correct, na.rm = TRUE),
-    res_time = mean(response_time, na.rm = TRUE),
-    .groups = 'drop'
-  )
-```
+As noted before, we collected data from 42 participants across three
+experimental conditions. One participant was excluded for failing to
+complete all tests, and another two were removed due to excessively high
+response times (greater than 3 standard deviations above the median) in
+Condition 1. Therefore, the following confirmatory analysis is based on
+data from the remaining 39 participants.
 
 ### Accuracy
 
 #### Overall Accuracy
 
 ```{r}
+# Calculate accuracy over condition
 accuracy <- combined_data %>%
   group_by(Condition) %>%
   summarise(Accuracy = mean(correct), .groups = 'drop')
@@ -343,11 +337,40 @@ accuracy <- combined_data %>%
 print(accuracy)
 ```
 
-In comparison to the original experiment, our accuracy data reflects similar but slightly lower performance across all conditions. 
-In the original study, participants discovered, on average, more than 16 of the 18 pairs in the 2x2 condition, corresponding to an accuracy above 88.9%, while our participants achieved an average accuracy of 68.3%. 
-For the 3x3 condition, the original study reported participants discovering more than 13 of the 18 pairs, or an accuracy above 72.2%, while our participants averaged 54.4%. 
-Lastly, in the 4x4 condition, the original study indicated participants discovered nearly 10 pairs, or an accuracy of approximately 55.6%, while our participants averaged 39.7%.
-Despite the differences in accuracy levels, both our study and the original experiment demonstrate a pattern of declining performance as ambiguity increases across conditions.
+```{r}
+# Calculate condition 3 accuracy by participant
+condition3_accuracy <- combined_data %>%
+  filter(Condition == "Condition3") %>%
+  group_by(ParticipantID) %>%
+  summarise(
+    participant_accuracy = mean(correct, na.rm = TRUE),
+    .groups = "drop"
+  )
+high_accuracy <- condition3_accuracy %>%
+  filter(participant_accuracy > 0.75)
+
+print(high_accuracy)
+```
+
+-   In comparison to the original experiment, our accuracy data reflects
+    similar but slightly lower performance across all conditions.
+-   In the original study, participants discovered, on average, more
+    than 16 of the 18 pairs in the 2x2 condition, corresponding to an
+    accuracy above 88.9%, while our participants achieved an average
+    accuracy of 69.2%.
+-   For the 3x3 condition, the original study reported participants
+    discovering more than 13 of the 18 pairs, or an accuracy above
+    72.2%, while our participants averaged 55.1%.
+-   Lastly, in the 4x4 condition, the original study indicated
+    participants discovered nearly 10 pairs, or an accuracy of
+    approximately 55.6%, while our participants averaged 40.3%. Besides,
+    4 participants in our experiment discovered more than 75% of the
+    pairs in this condition, which is less than half the number of
+    participants (9) who achieved the same level of performance in the
+    original experiment.
+-   Despite the differences in accuracy levels, both our study and the
+    original experiment demonstrate a pattern of declining performance
+    as ambiguity increases across conditions.
 
 #### Accuracy over images
 
@@ -369,23 +392,36 @@ ggplot(accuracy_by_image, aes(x = correct_image, y = Accuracy, group = Condition
   theme_minimal()
 ```
 
-The plot presents accuracy by image for each condition, showing how participants performed across the 18 images in the 2x2, 3x3, and 4x4 conditions. In Condition 1, accuracy remains relatively stable across all images, with minimal variability. Condition 2 and Condition 3 show slightly greater variability but no extreme deviations. 
+The plot presents accuracy by image for each condition, showing how
+participants performed across the 18 images in the 2x2, 3x3, and 4x4
+conditions. In Condition 1, accuracy remains relatively stable across
+all images, with minimal variability. Condition 2 and Condition 3 show
+slightly greater variability but no extreme deviations.
 
-#### Mean Accuracy by Condition
+#### Mean Accuracy Over Condition
+
 ```{r}
 # Calculate means and standard errors for plotting
-mean_accuracy <- combined_data %>%
+participant_accuracy <- combined_data %>%
+  group_by(Condition, ParticipantID) %>%
+  summarise(
+    participant_accuracy = mean(correct, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+mean_accuracy <- participant_accuracy %>%
   group_by(Condition) %>%
   summarise(
-    mean_accuracy = mean(correct, na.rm = TRUE),
-    se_accuracy = sd(correct, na.rm = TRUE) / sqrt(n())
+    mean_accuracy = mean(participant_accuracy, na.rm = TRUE),
+    se_accuracy = sd(participant_accuracy, na.rm = TRUE) / sqrt(n()),
+    .groups = "drop"
   )
 
 # Create the bar plot
 ggplot(mean_accuracy, aes(x = Condition, y = mean_accuracy, fill = Condition)) +
-  geom_bar(stat = "identity", width = 0.6) +
+  geom_bar(stat = "identity", width = 0.4) +
   geom_errorbar(aes(ymin = mean_accuracy - se_accuracy, ymax = mean_accuracy + se_accuracy), 
-                width = 0.2, color = "black") +
+                width = 0.1, color = "black") +
   geom_hline(yintercept = 0.25, linetype = "dotted", color = "black") +
   annotate("text", x = 3.35, y = 0.27, label = "Chance", 
            hjust = 0, size = 3, color = "black") +
@@ -394,63 +430,19 @@ ggplot(mean_accuracy, aes(x = Condition, y = mean_accuracy, fill = Condition)) +
     x = "Learning Condition",
     y = "Proportion Correct"
   ) +
-  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1)) +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2)) +
   theme_minimal() +
   theme(legend.position = "none")
 ```
-![Original Research Plot](/Users/yawendong/Documents/GitHub/yu2007/original_paper/plot1.png)
 
-## Reaction Times
+**Original Study Plot**
+<img src="https://raw.githubusercontent.com/YawenD283/yu2007/refs/heads/main/original_paper/plot1.png" alt="Original Research Plot" width="600"/>
 
-### Overall reaction times
-
-```{r}
-reaction_time <- combined_data %>%
-  group_by(Condition) %>%
-  summarise(
-    Mean_ReactionTime = mean(response_time),
-    SD_ReactionTime = sd(response_time),
-    .groups = 'drop'
-  )
-
-print(reaction_time)
-```
-
-Average reaction times are highest in Condition1 (4014.09 ms), and are
-shortest in Condition2. Also, reaction times in Condition 1 show
-significantly higher variability than the other two conditions.
-
-### Reaction times over images
-
-```{r}
-reaction_time_by_image <- combined_data %>%
-  group_by(Condition, correct_image) %>%
-  summarise(
-    Mean_ReactionTime = mean(response_time, na.rm = TRUE),
-    .groups = 'drop'
-  )
-
-ggplot(reaction_time_by_image, aes(x = correct_image, 
-                                   y = Mean_ReactionTime, 
-                                   group = Condition, 
-                                   color = Condition)) +
-  geom_line(size = 1) +
-  geom_point(size = 2) +
-  labs(
-    title = "Reaction Times by Image for Each Condition",
-    x = "Image",
-    y = "Mean Reaction Time (ms)"
-  ) +
-  scale_x_continuous(breaks = unique(reaction_time_by_image$correct_image)) +
-  facet_wrap(~Condition, scales = "free_x", ncol = 1) +
-  theme_minimal() 
-```
-
-Reaction times in condition 1 are generally stable across images, except
-for a sharp spike at Image 8. Due to our small sample size, this might
-suggest participants encountered a specific difficulty on that image.
-Reaction times are relatively consistent across all images in Condition
-2 and 3.
+Compared to the original study, the error bars for Conditions 1 and 2
+are larger in our experiment, indicating greater variability in
+participant performance. In the original study, the error bars are
+smaller, reflecting more consistent accuracy among participants across
+all conditions.
 
 ## Chance Performance
 
@@ -473,20 +465,42 @@ t_test_results <- combined_data %>%
 print(t_test_results)
 ```
 
-The t-tests validate that participants are employing cross-situational
-learning to perform better than random guessing in all conditions,
-aligning with findings in the original study.
+In the original study, it was reported that participants’ performance in
+all conditions significantly exceeded chance levels. In our study, the
+t-test results similarly show that performance across all conditions was
+significantly above the chance level of 0.25. The p-values for each
+condition are exceptionally small, confirming that participants were not
+guessing randomly but learning word-referent pairs.
 
 ## Effect of Condition (ANOVA)
 
 ```{r}
-anova <- aov(correct ~ Condition, data = combined_data)
+# Aggregate trial-level data into participant-level data
+participant_data <- combined_data %>%
+  group_by(Condition, ParticipantID) %>%
+  summarise(
+    perc = mean(correct, na.rm = TRUE),
+    res_time = mean(response_time, na.rm = TRUE),
+    .groups = 'drop'
+  )
+```
+
+```{r}
+# Run Anova test
+participant_data$Condition <- as.factor(participant_data$Condition)
+anova <- aov(perc ~ Condition, data = participant_data)
 summary(anova)
 ```
 
-The p-value indicates that condition has a measurable effect on
-accuracy, meaning the level of ambiguity in word-referent pairings
-impacts participants’ performance.
+-   Our ANOVA results (F = 11.68, p = 2.42e-05) revealed a statistically
+    significant effect of condition on accuracy, indicating that
+    participants’ performance varied significantly across the three
+    conditions. This finding aligns with the original study, which also
+    reported a decline in accuracy as task complexity increased from the
+    2x2 to 4x4 condition.
+-   This provides sufficient evidence for that, similar to the original
+    study, ambiguity plays an important role in participants’ ability to
+    learn word-referent pairs.
 
 ### Post-Hoc Analysis
 
@@ -495,32 +509,137 @@ tukey <- TukeyHSD(anova)
 print(tukey)
 ```
 
-The analysis shows that there is no statistically significant difference
-between Condition1 and Condition2, while Condition3 shows lower accuracy
-than the other two conditions.
+-   The post-hoc analysis highlights statistically significant
+    differences in accuracy across the conditions, particularly between
+    Condition 3 and the other two conditions. This is consistent with
+    the findings of the original study, where performance declined as
+    ambiguity increased.
+-   In detail, the relatively weak significance between Condition 1 and
+    Condition 2 suggests that participants found the 3x3 condition
+    slightly more challenging than the 2x2 condition, but the effect is
+    less pronounced compared to the drop in accuracy observed in the 4x4
+    condition.
 
-#### Additional Links
+## Exploratory analyses
 
-### Exploratory analyses
+### Response Times
 
-Any follow-up analyses desired (not required).
+#### Overall response times
+
+```{r}
+response_time <- combined_data %>%
+  group_by(Condition) %>%
+  summarise(
+    Mean_ResponseTime = mean(response_time),
+    SD_ResponseTime = sd(response_time),
+    .groups = 'drop'
+  )
+
+print(response_time)
+```
+
+-   In Condition 1, participants had the shortest mean response time,
+    indicating that tasks with lower ambiguity allowed for faster
+    responses. While Condition 2 had the longest mean response time,
+    Condition 3 showed a mean response time that was slightly shorter
+    than Condition 2 but still longer than Condition 1.
+-   The standard deviations are relatively high in condition 2 and 3,
+    indicating variability in participants’ response times across
+    trials.
+
+#### response times over images
+
+```{r}
+response_time_by_image <- combined_data %>%
+  group_by(Condition, correct_image) %>%
+  summarise(
+    Mean_ResponseTime = mean(response_time, na.rm = TRUE),
+    .groups = 'drop'
+  )
+
+ggplot(response_time_by_image, aes(x = correct_image, 
+                                   y = Mean_ResponseTime, 
+                                   group = Condition, 
+                                   color = Condition)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  labs(
+    title = "Response Times by Image for Each Condition",
+    x = "Image",
+    y = "Mean Response Time (ms)"
+  ) +
+  scale_x_continuous(breaks = unique(response_time_by_image$correct_image)) +
+  facet_wrap(~Condition, scales = "free_x", ncol = 1) +
+  theme_minimal() 
+```
+
+In Condition 1, response times stabilize quickly after a drop from Image
+1 to Image 2, showing minimal variability. Condition 2 shows a
+significant initial drop but remain stable afterwords. Condition 3 has
+relatively stable response times and a smaller initial drop. The initial
+drop across all conditions might suggest participants spend time
+adapting to the test phase at the beginning.
+
+#### Response times vs. Accuracy
+
+```{r}
+ggplot(participant_data, 
+       aes(x = res_time, y = perc)) + 
+  geom_point(alpha = 0.7, 
+             position = position_jitter(width = 0.2), size = 2,
+             aes(color = ParticipantID)) +
+  facet_wrap(~Condition, scales = "free") +
+  labs(
+    x = "Response Time (ms)", 
+    y = "Proportion Correct", 
+    title = "Response Time vs. Proportion Correct"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    strip.text = element_text(size = 12, face = "bold")
+  )
+```
+
+The scatterplot shows the relationship between response time and
+proportion correct across conditions. - In Condition 1, participants
+generally achieved high scores with lower response times, showing a
+cluster near the top-left. - In Condition 2, there is more variability
+in both response times and scores, with some participants taking
+significantly longer to respond. - In Condition 3, scores are lower
+overall, with response times spread more evenly, reflecting increased
+task difficulty.
 
 ## Discussion
 
 ### Summary of Replication Attempt
 
-Open the discussion section with a paragraph summarizing the primary
-result from the confirmatory analysis and the assessment of whether it
-replicated, partially replicated, or failed to replicate the original
-result.
+Our confirmatory analysis revealed that participants’ performance
+significantly declined as task ambiguity increased across the three
+conditions, consistent with the original study’s findings. Accuracy was
+highest in the 2x2 condition, lower in the 3x3 condition, and lowest in
+the 4x4 condition, with all conditions exceeding chance levels. While
+the general pattern replicated the original study, the levels of
+accuracy in our study was lower across all conditions, and variability
+was higher, particularly in the more complex conditions. These results
+suggest a partial replication of the original findings, capturing the
+overall trend but with differences in the strength and consistency of
+participant performance.
 
 ### Commentary
 
-Add open-ended commentary (if any) reflecting (a) insights from
-follow-up exploratory analysis, (b) assessment of the meaning of the
-replication (or not) - e.g., for a failure to replicate, are the
-differences between original and present study ones that definitely,
-plausibly, or are unlikely to have been moderators of the result, and
-(c) discussion of any objections or challenges raised by the current and
-original authors about the replication attempt. None of these need to be
-long.
+- Our exploratory analyses showed that response times increased with task complexity, particularly in the 3x3 condition. Interestingly, a small number of participants in the 4x4 condition still achieved relatively high accuracy within a short response time, suggesting that they may use more effective strategies to resolve high ambiguity.
+- While the overall trend of declining accuracy with increasing task complexity replicated the original findings, the lower accuracy and higher variability in our study suggest the presence of moderating factors. Differences in participant demographics (university students vs. Prolific users), experimental settings, or task delivery (i.e. instructions, timing) could potentially influence the test results.
+- The main challenge in interpreting the results lies in the high variability observed in our study, which could be attributed to uncontrolled external factors. Another important aspect not tested in our replication is the role of foil probability—how often incorrect choices were presented. We ignored the factor due to limited time, which may have affected participants’ ability to differentiate correct from incorrect word pairings. Future studies may attempt to take better controll of external factors and take fol probability into account.
+
+## Author Contribution Statement
+
+-   **Hui Junyi**: Experiment coding (trial/training phase coding;
+    pre-test audio check and fullscreen check; randomization; condition
+    order counterbalancing code; debugging; review); pre-registration
+    revisions
+-   **Yawen Dong**: Experiment coding (test phase coding; randomization;
+    debugging; review); pre-registration revisions; OSF datapipe setup
+-   **Allison Park**: Stimuli analysis and selection; pre-registration
+    original draft; Prolific experiment management; code review
+-   **Pengjia Cui**: Stimuli generation code; code review
